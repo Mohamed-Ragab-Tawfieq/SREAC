@@ -1,0 +1,25 @@
+$white: #fff;
+$black: #000;
+$primary: #b05538;
+$success: #e9ce97 !default;
+$danger: #ff271a;
+$orange: orange;
+
+$themes: (
+    light: (
+        "text": #000,
+        "bg": #fff
+    ),
+    dark: (
+        "text": #fff,
+        "bg": #333
+    )
+);
+
+@each $name, $map in $themes {
+    .theme-#{$name} {
+        @each $key, $value in $map {
+            --#{$key}: #{$value};
+        }
+    }
+}
