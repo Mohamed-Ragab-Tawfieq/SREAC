@@ -142,16 +142,6 @@ body {
     }
 }
 
-section {
-    & + section {
-        margin-top: 2.5rem;
-
-        @media (max-width: 991px) {
-            margin-top: 1.5rem;
-        }
-    }
-}
-
 img {
     &[src*=".svg"] {
         max-width: 100%;
@@ -182,6 +172,7 @@ h3,
 h4,
 h5 {
     margin-bottom: 0;
+    color: unset;
 }
 
 a {
@@ -202,6 +193,11 @@ textarea {
 video,
 input {
     outline: 0 !important;
+}
+
+video {
+    border-radius: 1rem;
+    max-width: 100%;
 }
 
 button,

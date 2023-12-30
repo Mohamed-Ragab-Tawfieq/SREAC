@@ -1,17 +1,3 @@
-.container {
-    @media (min-width: 1450px) {
-        max-width: 1450px !important;
-
-        &.lg:not(.small) {
-            max-width: 1450px !important;
-        }
-    }
-
-    @media (min-width: 1920px) {
-        max-width: 100% !important;
-    }
-}
-
 *[class*="btn-"]:not([class*="btn-outline"]) {
     color: $white;
 }
@@ -25,6 +11,10 @@
     &.show:not(.dropdown-toggle) {
         color: $white !important;
     }
+}
+
+a {
+    color: $black;
 }
 
 .form-select {
@@ -65,10 +55,6 @@
         position: absolute;
         text-align: start;
         padding-block: 0;
-
-        .theme-dark & {
-            background-color: #333;
-        }
 
         &[data-bs-popper] {
             @media (min-width: 992px) {

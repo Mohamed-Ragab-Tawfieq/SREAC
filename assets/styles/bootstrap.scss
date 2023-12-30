@@ -1,15 +1,13 @@
-$primary: #326b90;
-$success: #5f8b52;
 $white: #fff;
 $black: #000;
+$primary: #0175bc;
+$success: #54c3ba;
+$danger: #ff271a;
+$info: #f9f9eb;
 
 $theme-colors: (
     "primary": $primary,
     "success": $success
-);
-
-$colors: (
-    "green": $primary
 );
 
 $container-max-widths: (
@@ -19,6 +17,10 @@ $container-max-widths: (
     xl: 1192px,
     xxl: 1320px
 );
+
+$btn-border-radius: 1.5rem;
+$btn-padding-y: 0.7rem;
+$btn-padding-x: 1.5rem;
 
 $input-font-weight: 400;
 $input-font-size: clamp(0.75rem, 2.5vw, 1rem);
@@ -30,4 +32,4 @@ $modal-backdrop-bg: rgba($black, 0.6);
 $nav-tabs-link-active-color: $white;
 $nav-tabs-link-active-bg: $primary;
 
-@import "bootstrap/bootstrap.scss";
+@import "bootstrap/scss/bootstrap.scss";

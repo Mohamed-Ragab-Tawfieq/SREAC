@@ -1,0 +1,30 @@
+.video-wrapper {
+    position: relative;
+
+    video {
+        position: relative;
+        z-index: 5;
+
+        @media (min-width: 1200px) and (max-width: 1450px) {
+            margin-top: 80px;
+        }
+    }
+
+    &::after {
+        content: url(../images/video-bg.svg);
+        position: absolute;
+        top: -80px;
+        inset-inline-start: -90px;
+        z-index: 0;
+
+        @media (min-width: 1200px) and (max-width: 1450px) {
+            top: 0;
+        }
+
+        @media (max-width: 767px) {
+            top: -160px;
+            inset-inline-start: -150px;
+            transform: scale(0.6);
+        }
+    }
+}

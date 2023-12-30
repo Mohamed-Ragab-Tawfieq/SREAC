@@ -1,9 +1,9 @@
 $white: #fff;
 $black: #000;
-$primary: #b05538;
-$success: #e9ce97 !default;
+$primary: #0175bc;
+$success: #54c3ba;
 $danger: #ff271a;
-$orange: orange;
+$info: #f9f9eb;
 
 $themes: (
     light: (
@@ -17,7 +17,7 @@ $themes: (
 );
 
 @each $name, $map in $themes {
-    .theme-#{$name} {
+    [data-bs-theme="#{$name}"] {
         @each $key, $value in $map {
             --#{$key}: #{$value};
         }
